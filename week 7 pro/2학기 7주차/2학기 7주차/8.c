@@ -4,18 +4,18 @@ struct point
 	int x, y;
 };
 
-struct circle
+typedef struct circle
 {
 	struct point center;
 	double radius;
-};
+}CIRCLE;
 
-double area(struct circle c)
+double area(CIRCLE c)
 {
 	return c.radius * c.radius * 3.14;
 }
 
-double perimeter(struct circle c)
+double perimeter(CIRCLE c)
 {
 	return 2 * 3.14 * c.radius;
 }
@@ -25,7 +25,7 @@ double perimeter(struct circle c)
 int main(void)
 {
 	struct point p;
-	struct circle c;
+	CIRCLE c;
 
 	printf("원의 중심점: ");
 	scanf_s("%d %d", &p.x, &p.y);

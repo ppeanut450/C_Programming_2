@@ -19,9 +19,9 @@ int quadrant(struct point p)
 	return 0;
 }
 
-int main(void) 
+int main(void)
 {
 	struct point p = { -1, 2 };
-	
+
 	quadrant(p);
 }

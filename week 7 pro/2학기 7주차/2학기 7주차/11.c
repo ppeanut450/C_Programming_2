@@ -12,14 +12,14 @@ int main(void)
 {
 	int i;
 	char search[30];
-	struct numberbook nb[3];
-	
+	struct numberbook nb[3] = { 0 };
+
 	for (i = 0; i < 3; i++)
 	{
 		printf("이름을 입력하시오: ");
 		scanf_s("%s", nb[i].name, 30);
 		printf("집전화번호를 입력하시오: ");
-		scanf_s("%s", nb[i].home_number,30 );
+		scanf_s("%s", nb[i].home_number, 30);
 		printf("휴대폰번호를 입력하시오: ");
 		scanf_s("%s", nb[i].phone_number, 30);
 	}
