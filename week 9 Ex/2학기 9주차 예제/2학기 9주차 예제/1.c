@@ -17,7 +17,7 @@ int main(void)
 		if (number < 0)
 			break;
 		scanf_s("%s %f", name, 20, &score);
-		fprintf(fp, "%d %s %f", number, name, score);
+		fprintf(fp, " %d %s %f", number, name, score);
 	}
 	fclose(fp);
 	return 0;
