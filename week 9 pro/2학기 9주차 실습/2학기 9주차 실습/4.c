@@ -14,7 +14,7 @@ int main(void)
 	
 	if (fp1 == NULL || fp2 == NULL)
 	{
-		fprintf(stderr, "파일을 읽을 수 없습니다..\n");
+		fprintf(stderr, "파일을 열 수 없습니다..\n");
 		return 1;
 	}
 
@@ -24,7 +24,8 @@ int main(void)
 		fgets(buffer2, 100, fp2);
 		if (strcmp(buffer1, buffer2) != 0)
 		{
-			printf("%s\n%s\n", buffer1, buffer2);
+			printf("%s\n", buffer1);
+			printf("%s\n", buffer2);
 			fclose(fp1);
 			fclose(fp2);
 			return 0;
