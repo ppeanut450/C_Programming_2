@@ -11,7 +11,7 @@ int main(void)
 	scanf_s("%s", filename2, 100);
 	fopen_s(&fp1, filename1, "rt");
 	fopen_s(&fp2, filename2, "rt");
-	
+
 	if (fp1 == NULL || fp2 == NULL)
 	{
 		fprintf(stderr, "파일을 열 수 없습니다..\n");
@@ -24,8 +24,8 @@ int main(void)
 		fgets(buffer2, 100, fp2);
 		if (strcmp(buffer1, buffer2) != 0)
 		{
-			printf("%s\n", buffer1);
-			printf("%s\n", buffer2);
+			printf("<< %s", buffer1);
+			printf(">> %s", buffer2);
 			fclose(fp1);
 			fclose(fp2);
 			return 0;
