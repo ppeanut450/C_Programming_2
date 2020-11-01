@@ -28,5 +28,7 @@ int main(void)
 	}
 	printf("문자의 개수는 %d", count);
 
+	fclose(fp);
+
 	return 0;
 }
