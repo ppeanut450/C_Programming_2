@@ -29,7 +29,6 @@ void add_movie(NODE* p)
 	scanf_s("%d", &year);
 	p->year = year;
 	printf("\n");
-	return *p;
 }
 
 void print_movie(NODE* p, NODE* list)
