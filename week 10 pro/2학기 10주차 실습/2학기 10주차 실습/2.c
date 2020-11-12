@@ -11,7 +11,7 @@ int main(void)
 
 	char** A = NULL;
 
-	if ((A = malloc(n * sizeof(char*))) != NULL)
+	if ((A = (char**)malloc(n * sizeof(char*))) != NULL)
 	{
 		for (i = 0; i < n; i++)
 			A[i] = (char*)malloc(100);
@@ -21,7 +21,7 @@ int main(void)
 
 	for (i = 0; i < n; i++)
 		printf("\"¹®ÀÚ¿­ %d\" ", i);
-	printf(" ]");
+	printf("]");
 
 	free(A);
 	return 0;	
