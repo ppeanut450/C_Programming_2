@@ -19,18 +19,16 @@ void print_menu()
 	printf("------------------------------------\n");
 }
 
-//reset()
-//{
-//
-//}
-
 void add(NODE* p)
 {
 	getchar();
+	printf("\n");
 	printf("이름: ");
 	gets_s(p->name, 30);
 	printf("번호: ");
 	gets_s(p->phone, 30);
+	printf("\n");
+	printf("추가되었습니다.\n");
 	printf("\n");
 }
 
@@ -38,27 +36,33 @@ void search(NODE* p, NODE* list)
 {
 	char buffer[30];
 	getchar();
+	printf("\n");
 	printf("탐색하고자 하는 이름: ");
 	gets_s(buffer, 30);
+	printf("\n");
 	p = list;
 	while (p != NULL)
 	{
 		if(strcmp(p->name, buffer) == 0)
 		{
 			printf("이름: %s\n", p->name);
-			printf("번호: %s\n", p->phone);
+			printf("번호: %s\n\n", p->phone);
 			break;
 		}
 		p = p->link;
 	}
+
+	if (p == NULL)
+		printf("입력된 이름이 존재하지 않습니다.\n\n");
+
 }
 
 void change(NODE* p, NODE* list)
 {
 	char buffer1[30];
 	char buffer2[30];
-	getchar();
-	printf("탐색하고자 하는 이름: ");
+	getchar();	printf("\n");
+	printf("변경하고자 하는 이름: ");
 	gets_s(buffer1, 30);
 	p = list;
 	
@@ -66,11 +70,13 @@ void change(NODE* p, NODE* list)
 	{
 		if (strcmp(buffer1, p->name) == 0)
 		{
-			printf("변경할 번호: ");
+			printf("원래 전화 번호: %s\n", p->phone);
+			printf("변경할 전화 번호: ");
 			gets_s(buffer2, 30);
 
-			strcpy_s(p->phone, 30, buffer2, 30);
-			printf("변경되었습니다.\n");
+			strcpy_s(p->phone, 30, buffer2);
+			printf("\n변경되었습니다.\n\n");
+			break;
 		}
 		p = p->link;
 	}
@@ -103,7 +109,8 @@ int main(void)
 		switch (num)
 		{
 			case 1:
-				p = NULL;
+				list = NULL;
+				printf("\n초기화 되었습니다.\n\n");
 				break;
 
 			case 2: 
