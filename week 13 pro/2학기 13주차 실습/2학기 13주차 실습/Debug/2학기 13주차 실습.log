@@ -1,0 +1,4 @@
+﻿  1.c
+C:\github\C_programming_2\week 13 pro\2학기 13주차 실습\2학기 13주차 실습\1.c(19,11): warning C4047: 'return': 'int'의 간접 참조 수준이 'char *'과(와) 다릅니다.
+C:\github\C_programming_2\week 13 pro\2학기 13주차 실습\2학기 13주차 실습\1.c(31,9): warning C4477: 'printf' : 서식 문자열 '%s'에 'char *' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'int'입니다.
+  2학기 13주차 실습.vcxproj -> C:\github\C_programming_2\week 13 pro\2학기 13주차 실습\Debug\2학기 13주차 실습.exe
