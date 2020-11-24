@@ -1,5 +1,5 @@
 #include <stdio.h>
-set_proverbs(char** q, int n)
+char* set_proverbs(char** q, int n)
 {
 	static char *array[] = { 
 		 "A bad shearer never had a good sickle.",
