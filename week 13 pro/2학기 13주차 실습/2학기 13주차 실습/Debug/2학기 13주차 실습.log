@@ -1,2 +1,3 @@
-﻿  4.c
+﻿  1.c
+C:\github\C_programming_2\week 13 pro\2학기 13주차 실습\2학기 13주차 실습\1.c(19,11): warning C4090: 'return': 'const' 한정자가 서로 다릅니다.
   2학기 13주차 실습.vcxproj -> C:\github\C_programming_2\week 13 pro\2학기 13주차 실습\Debug\2학기 13주차 실습.exe

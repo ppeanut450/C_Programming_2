@@ -1,7 +1,7 @@
 #include <stdio.h>
-char* set_proverbs(char** q, int n)
+char* set_proverbs(const char** q, int n)
 {
-	static char *array[] = { 
+	const char *array[] = { 
 		 "A bad shearer never had a good sickle.",
 		 "A bad workman (always) blames his tools.",
 		 "A bad workman quarrels with his tools.",
